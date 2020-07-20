@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* default */
+body {
+  font-family: "Oswald", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+#skill-section {
+  padding: 20px;
+  background: rgb(3, 17, 43);
+  justify-content: center;
+}
+#skill-section h3 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 200;
+}
+.container-s {
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.each {
+  padding: 16px;
+  /* border: 1.5px solid white; */
+  border-radius: 8px;
+  color: white;
+  background: rgb(3, 27, 61);
+}
+
+.skills {
+  text-align: left;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+  padding: 8px 0px;
+}
+
+/* .skil-name{
+    /* text-align: left; */
+/* }*/
+
+.skill-bar {
+  height: 8px;
+  background: white;
+  border-radius: 2px;
+}
+.skill-per {
+  height: 8px;
+  background: rgb(17, 165, 198);
+  border-radius: 2px;
+  width: 0;
+  transition: 2.5s linear;
+  position: relative;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 2px;
+  top: -30px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+/* .skill-per::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+} */
+
+/* media queries */
